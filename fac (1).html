@@ -1,0 +1,104 @@
+<!-- fac.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BlueJS - Functions And Connections. Learn how to use Bluetooth with BlueJS through various tutorials.">
+    <meta name="keywords" content="BlueJS, Bluetooth, JavaScript, Tutorials, Functions, Connections">
+    <meta name="author" content="Your Name">
+  <meta property="og:title" content="BlueJS - Bluetooth Javacript">
+<meta property="og:description" content="BlueJS is a new language made with JavaScript, perfect to interact with Bluetooth and wireless technology. Upload your code to devices, connections, and more.">
+<meta property="og:favicon" content="bluejs.jpg">
+
+    <title>BlueJS - Functions And Connections</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inline Styles (if needed) -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+        h1 {
+            color: #3498db;
+        }
+        section {
+            margin-top: 20px;
+        }
+        h2 {
+            color: #3498db;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 0;
+            border-top: 2px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BlueJS - Functions And Connections</h1>
+</header>
+
+<section id="intro">
+    <h2>Introduction to Bluetooth Usage</h2>
+    <p>Bluetooth is a wireless technology that allows devices to communicate with each other over short distances. In BlueJS, you can leverage Bluetooth to create various functionalities and connections. Here's a basic guide on how to use Bluetooth:</p>
+    <ol>
+        <li>Turn on Bluetooth on your device.</li>
+        <li>Search for nearby Bluetooth devices.</li>
+        <li>Select a Bluetooth device to connect to.</li>
+        <li>Establish a connection with the chosen device.</li>
+        <li>Access services and characteristics for data transfer.</li>
+        <li>Send and receive data using Bluetooth.</li>
+    </ol>
+    <p>Explore the tutorials below to learn more about specific Bluetooth functionalities and connections with BlueJS.</p>
+</section>
+
+<section id="tutorials">
+    <!-- JavaScript will dynamically populate this section with tutorials -->
+</section>
+
+<script src="fac.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tutorialsSection = document.getElementById('tutorials');
+
+        tutorials.forEach((tutorial, index) => {
+            const tutorialHtml = `
+                <h2>${tutorial.title}</h2>
+                <ol>
+                    ${tutorial.steps.map(step => `<li>${step}</li>`).join('')}
+                </ol>
+                <hr>
+            `;
+
+            tutorialsSection.innerHTML += tutorialHtml;
+        });
+    });
+</script>
+<h5>Looks like you've reached the end.</h5>
+<a href="docs.html" class="docs-button">Go back to documentary</a>
+</body>
+</html>
